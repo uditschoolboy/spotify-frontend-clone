@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Noto Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 80px;
+    background-color: black;
+    align-items: center;
+    color: white;
+}
+nav ul li {
+    padding:0 12px;
+}
+.brand img {
+    width: 44px;
+    margin-right: 10px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container {
+    min-height: 75vh;
+    color: white;
+    background-color: black;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 13px;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.bottom .icons {
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom .icons i {
+    padding: 10px 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    accent-color: brown;
+}
+.song-item {
+    height: 90px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 23px;
+    padding-right: 20px;
+    border-radius: 12px;
+}
+.song-item img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.song-item:hover {
+    background-color: brown;
+}
+.song-list-play {
+    font-size: 20px;
+    cursor: pointer;
+}
+.image-container {
+    max-width: 10%;
+}
+.image-container img {
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s ease-in;
+}
+.song-info span {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    font-size: 20px;
+}
+.song-info {
+    display: flex;
+    position: absolute;
+    left: 10vw;
+    bottom: 20px;
+    justify-content: flex-start;
+    align-items: baseline;
+    height: 50px;
+    width: 350px;
+}
